@@ -1,0 +1,34 @@
+#progress {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  background: #adb5bd;
+  border-radius: 4px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #495057;
+}
+
+.toggle-speaker .circle {
+  transform: translateX(18px);
+  transition: 0.3s;
+}
+
+.toggle-speaker {
+  transition: 0.5s;
+}
+.toggle-speaker.active {
+  background: #adb5bd;
+}
+
+.toggle-speaker.active .circle {
+  transform: translateX(2px);
+  background: #495057;
+}
